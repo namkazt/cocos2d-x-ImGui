@@ -17,9 +17,20 @@ Fixed version from coi version
 CCIMGUI::getInstance()->addImGUI([=](){
   ImGui::SetNextWindowPos(ImVec2(650, 20), ImGuiSetCond_FirstUseEver);
   ImGui::ShowTestWindow(&isShowDemo);
-});
+}, "Function ID");
 ```
 this will auto add to pipline
+
+3, Remove ImGUI functions
+```c++
+CCIMGUI::getInstance()->addImGUI("Function ID");
+```
+
+4, Other
+```c++
+CCIMGUI::getInstance()->getWindow() \\ Return GLFWwindow*
+CCIMGUI::getInstance()->setShowStyleEditor(true or false)
+```
 
 ###Preview:
 ![Preview](https://raw.githubusercontent.com/namkazt/cocos2d-x-ImGui/master/preview.png)

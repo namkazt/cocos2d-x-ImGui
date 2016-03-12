@@ -23,7 +23,7 @@ this will auto add to pipline
 
 3, Remove ImGUI functions
 ```c++
-CCIMGUI::getInstance()->addImGUI("Function ID");
+CCIMGUI::getInstance()->removeImGUI("Function ID");
 ```
 
 4, Other

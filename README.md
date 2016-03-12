@@ -20,3 +20,6 @@ CCIMGUI::getInstance()->addImGUI([=](){
 });
 ```
 this will auto add to pipline
+
+###Preview:
+![Preview](https://raw.githubusercontent.com/namkazt/cocos2d-x-ImGui/master/preview.png)

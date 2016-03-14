@@ -1,5 +1,5 @@
 #include "AppDelegate.h"
-#include "Tool/MapEditorScene.h"
+#include "HelloWorldScene.h"
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) || (CC_TARGET_PLATFORM == CC_PLATFORM_MAC)
 #include "IMGUIGLViewImpl.h"
@@ -65,7 +65,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // create a scene. it's an autorelease object
 
 	auto scene = Scene::create();
-	scene->addChild(MapEditorScene::create());
+	scene->addChild(HelloWorldScene::create());
     director->runWithScene(scene);
 
 	// auto check when imGUI layer is not added yet.

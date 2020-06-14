@@ -1,18 +1,18 @@
 # cocos2d-x-ImGui
 Fixed version from coi version
 
-###Features:
+### Features:
 * Programable pipline
 * Add ImageButton create with SpriteFrameCached
 * Fix Cocos2d-x Implement
 * Auto add ImGUI layer on top whenever create or change Scene
 * All ImGUI v1.4.8 WIP features + Simple Style Change
 
-###Using: 
+### Using: 
 
-1, Replace AppDelegate
+1. Replace AppDelegate and GLViewImpl as needed
 
-2, Add ImGUI functions on any where
+2. Add the ImGui callbacks through the `CCIMGUI` global
 ```c++
 CCIMGUI::getInstance()->addImGUI([=](){
   ImGui::SetNextWindowPos(ImVec2(650, 20), ImGuiSetCond_FirstUseEver);
@@ -21,16 +21,16 @@ CCIMGUI::getInstance()->addImGUI([=](){
 ```
 this will auto add to pipline
 
-3, Remove ImGUI functions
+3. Remove ImGUI functions
 ```c++
 CCIMGUI::getInstance()->removeImGUI("Function ID");
 ```
 
-4, Other
+4. Other
 ```c++
 CCIMGUI::getInstance()->getWindow() \\ Return GLFWwindow*
 CCIMGUI::getInstance()->setShowStyleEditor(true or false)
 ```
 
-###Preview:
+### Preview:
 ![Preview](https://raw.githubusercontent.com/namkazt/cocos2d-x-ImGui/master/preview.png)
